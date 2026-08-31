@@ -1,0 +1,37 @@
+====================================================================================================================
+★ 定版形态前视审计(逐点重放)
+
+【A1 σ(T) 逐点重放 —— 抽样 300 个 (日,T)】
+  T=1000: 最大绝对差 7.983e-10  (n=75)
+  T=1029: 最大绝对差 7.983e-10  (n=75)
+  T=1129: 最大绝对差 7.983e-10  (n=75)
+  T=1359: 最大绝对差 7.983e-10  (n=75)
+  ⇒ 全局最大 7.983e-10 —— 量级 1e-10 属 pandas 流式rolling与切片求均值的浮点差, 非结构性前视
+
+【A2 边界构成 —— 决策时刻可知性逐项核对】
+  · 今日开盘价 o0 = 09:31 bar 的 open = 09:30 集合竞价成交价  → 09:30 可知 ✓
+  · σ(T) 由【过去14日】同时刻数据构成                        → 昨收后即可知 ✓
+  · 边界 = o0×(1±k·σ(T)), k=2.5 为常数                      → 09:30 可知 ✓
+  · 判定量 close(T)                                        → T 时刻可知 ✓
+  ⇒ 最早决策时点 T=10:00 时, 全部输入已在 10:00 前可得
+
+【A3 决策/成交时序】
+  判定 bar 1000 收盘 → 成交 bar 1001 开盘   ✓
+  判定 bar 1029 收盘 → 成交 bar 1030 开盘   ✓
+  判定 bar 1129 收盘 → 成交 bar 1130 开盘   ✓
+  判定 bar 1359 收盘 → 成交 bar 1400 开盘   ✓
+  ⇒ 全部成交时刻严格晚于判定时刻
+
+【A4 shift(-1) 使用位置全代码检索 —— 未来数据只允许出现在【出场价】】
+  plot_current.py:29  C,O=pc.values,po.values; ic=np.where(hms<=CLOSE_HM)[0][-1]; nxt=dopen.shift(-1).values
+  ivu_star.py:28  C,O=pc.values,po.values; ic=np.where(hms<=CLOSE_HM)[0][-1]; nxt=dopen.shift(-1).values
+  sanity_where_money.py:42  nopen=dopen.shift(-1).values
+  sanity_where_money.py:45  n935=pc[935].shift(-1).values if 935 in pc.columns else None
+  sanity_where_money.py:83  nopen=dopen.shift(-1).values; rows=[]
+  ⇒ 仅出现在 nxt=dopen.shift(-1)(次日开盘=出场价)与 fwd 目标构造中;
+    出场价属未来但不进入任何【决策】(决策仅用 σ/o0/close(T)) ⇒ 合法
+
+【A5 09:31 bar 的 open 是否等于前收(若是则"今开"实为昨收, 边界锚错)】
+  CSI500    open(09:31)==前收 比例 0.00%  ⇒ ✓ 真实竞价价
+  CSI1000   open(09:31)==前收 比例 0.00%  ⇒ ✓ 真实竞价价
+  CNI2000   open(09:31)==前收 比例 0.04%  ⇒ ✓ 真实竞价价

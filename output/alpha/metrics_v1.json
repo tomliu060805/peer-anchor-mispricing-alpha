@@ -1,0 +1,458 @@
+{
+ "resid:peer_mom": {
+  "dev": {
+   "IC": -0.0116,
+   "ICIR": -0.1,
+   "IC_t": -1.98,
+   "nIC": 390,
+   "LS_ann_gross": -0.0186,
+   "LS_ann_net": -0.1507,
+   "LS_sharpe_net": -0.91,
+   "TopEx_ann_net": -0.1708,
+   "turnover": 0.524,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.446,
+    "avg_bp": -29.9,
+    "wl_ratio": 0.88,
+    "profit_factor": 0.71
+   }
+  },
+  "val": {
+   "IC": -0.02,
+   "ICIR": -0.13,
+   "IC_t": -1.15,
+   "nIC": 78,
+   "LS_ann_gross": -0.172,
+   "LS_ann_net": -0.3039,
+   "LS_sharpe_net": -1.22,
+   "TopEx_ann_net": -0.2237,
+   "turnover": 0.523,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.423,
+    "avg_bp": -60.3,
+    "wl_ratio": 0.72,
+    "profit_factor": 0.53
+   }
+  }
+ },
+ "resid:peer_gap": {
+  "dev": {
+   "IC": 0.0596,
+   "ICIR": 0.572,
+   "IC_t": 11.29,
+   "nIC": 390,
+   "LS_ann_gross": 0.4732,
+   "LS_ann_net": 0.3385,
+   "LS_sharpe_net": 2.3,
+   "TopEx_ann_net": 0.0373,
+   "turnover": 0.534,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.628,
+    "avg_bp": 67.2,
+    "wl_ratio": 1.43,
+    "profit_factor": 2.41
+   }
+  },
+  "val": {
+   "IC": 0.051,
+   "ICIR": 0.44,
+   "IC_t": 3.89,
+   "nIC": 78,
+   "LS_ann_gross": 0.4723,
+   "LS_ann_net": 0.3413,
+   "LS_sharpe_net": 1.57,
+   "TopEx_ann_net": 0.0567,
+   "turnover": 0.52,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.667,
+    "avg_bp": 67.7,
+    "wl_ratio": 1.12,
+    "profit_factor": 2.25
+   }
+  }
+ },
+ "resid:zspread": {
+  "dev": {
+   "IC": 0.0567,
+   "ICIR": 0.565,
+   "IC_t": 11.16,
+   "nIC": 390,
+   "LS_ann_gross": 0.3871,
+   "LS_ann_net": 0.2751,
+   "LS_sharpe_net": 1.98,
+   "TopEx_ann_net": 0.0382,
+   "turnover": 0.444,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.621,
+    "avg_bp": 54.6,
+    "wl_ratio": 1.3,
+    "profit_factor": 2.12
+   }
+  },
+  "val": {
+   "IC": 0.0481,
+   "ICIR": 0.435,
+   "IC_t": 3.84,
+   "nIC": 78,
+   "LS_ann_gross": 0.3875,
+   "LS_ann_net": 0.2818,
+   "LS_sharpe_net": 1.52,
+   "TopEx_ann_net": 0.0565,
+   "turnover": 0.419,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.615,
+    "avg_bp": 55.9,
+    "wl_ratio": 1.25,
+    "profit_factor": 1.99
+   }
+  }
+ },
+ "raw:peer_mom": {
+  "dev": {
+   "IC": -0.012,
+   "ICIR": -0.08,
+   "IC_t": -1.57,
+   "nIC": 390,
+   "LS_ann_gross": -0.004,
+   "LS_ann_net": -0.1335,
+   "LS_sharpe_net": -0.65,
+   "TopEx_ann_net": -0.1725,
+   "turnover": 0.514,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.477,
+    "avg_bp": -26.5,
+    "wl_ratio": 0.85,
+    "profit_factor": 0.77
+   }
+  },
+  "val": {
+   "IC": -0.0366,
+   "ICIR": -0.198,
+   "IC_t": -1.75,
+   "nIC": 78,
+   "LS_ann_gross": -0.308,
+   "LS_ann_net": -0.4397,
+   "LS_sharpe_net": -1.65,
+   "TopEx_ann_net": -0.3106,
+   "turnover": 0.522,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.346,
+    "avg_bp": -87.2,
+    "wl_ratio": 0.89,
+    "profit_factor": 0.47
+   }
+  }
+ },
+ "raw:peer_gap": {
+  "dev": {
+   "IC": 0.0611,
+   "ICIR": 0.684,
+   "IC_t": 13.52,
+   "nIC": 390,
+   "LS_ann_gross": 0.4969,
+   "LS_ann_net": 0.3631,
+   "LS_sharpe_net": 2.49,
+   "TopEx_ann_net": 0.0559,
+   "turnover": 0.531,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.682,
+    "avg_bp": 72.0,
+    "wl_ratio": 1.32,
+    "profit_factor": 2.83
+   }
+  },
+  "val": {
+   "IC": 0.0388,
+   "ICIR": 0.394,
+   "IC_t": 3.48,
+   "nIC": 78,
+   "LS_ann_gross": 0.4399,
+   "LS_ann_net": 0.3105,
+   "LS_sharpe_net": 1.59,
+   "TopEx_ann_net": 0.0224,
+   "turnover": 0.514,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.603,
+    "avg_bp": 61.6,
+    "wl_ratio": 1.58,
+    "profit_factor": 2.39
+   }
+  }
+ },
+ "raw:zspread": {
+  "dev": {
+   "IC": 0.0539,
+   "ICIR": 0.627,
+   "IC_t": 12.39,
+   "nIC": 390,
+   "LS_ann_gross": 0.406,
+   "LS_ann_net": 0.2968,
+   "LS_sharpe_net": 2.29,
+   "TopEx_ann_net": 0.0435,
+   "turnover": 0.433,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.664,
+    "avg_bp": 58.9,
+    "wl_ratio": 1.27,
+    "profit_factor": 2.51
+   }
+  },
+  "val": {
+   "IC": 0.0366,
+   "ICIR": 0.383,
+   "IC_t": 3.38,
+   "nIC": 78,
+   "LS_ann_gross": 0.3674,
+   "LS_ann_net": 0.267,
+   "LS_sharpe_net": 1.62,
+   "TopEx_ann_net": 0.0226,
+   "turnover": 0.399,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.603,
+    "avg_bp": 53.0,
+    "wl_ratio": 1.41,
+    "profit_factor": 2.14
+   }
+  }
+ },
+ "industry:peer_mom": {
+  "dev": {
+   "IC": -0.0027,
+   "ICIR": -0.028,
+   "IC_t": -0.55,
+   "nIC": 390,
+   "LS_ann_gross": 0.0321,
+   "LS_ann_net": -0.1036,
+   "LS_sharpe_net": -0.7,
+   "TopEx_ann_net": -0.085,
+   "turnover": 0.539,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.421,
+    "avg_bp": -20.5,
+    "wl_ratio": 1.03,
+    "profit_factor": 0.75
+   }
+  },
+  "val": {
+   "IC": -0.0306,
+   "ICIR": -0.231,
+   "IC_t": -2.04,
+   "nIC": 78,
+   "LS_ann_gross": -0.1497,
+   "LS_ann_net": -0.2857,
+   "LS_sharpe_net": -1.64,
+   "TopEx_ann_net": -0.1838,
+   "turnover": 0.54,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.372,
+    "avg_bp": -56.7,
+    "wl_ratio": 0.93,
+    "profit_factor": 0.55
+   }
+  }
+ },
+ "industry:peer_gap": {
+  "dev": {
+   "IC": 0.0585,
+   "ICIR": 0.532,
+   "IC_t": 10.51,
+   "nIC": 390,
+   "LS_ann_gross": 0.4652,
+   "LS_ann_net": 0.3302,
+   "LS_sharpe_net": 2.08,
+   "TopEx_ann_net": 0.0309,
+   "turnover": 0.536,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.605,
+    "avg_bp": 65.5,
+    "wl_ratio": 1.48,
+    "profit_factor": 2.27
+   }
+  },
+  "val": {
+   "IC": 0.0391,
+   "ICIR": 0.275,
+   "IC_t": 2.43,
+   "nIC": 78,
+   "LS_ann_gross": 0.4583,
+   "LS_ann_net": 0.327,
+   "LS_sharpe_net": 1.25,
+   "TopEx_ann_net": 0.0145,
+   "turnover": 0.521,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.564,
+    "avg_bp": 64.9,
+    "wl_ratio": 1.55,
+    "profit_factor": 2.01
+   }
+  }
+ },
+ "industry:zspread": {
+  "dev": {
+   "IC": 0.0557,
+   "ICIR": 0.528,
+   "IC_t": 10.42,
+   "nIC": 390,
+   "LS_ann_gross": 0.3989,
+   "LS_ann_net": 0.291,
+   "LS_sharpe_net": 1.99,
+   "TopEx_ann_net": 0.0545,
+   "turnover": 0.428,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.623,
+    "avg_bp": 57.7,
+    "wl_ratio": 1.28,
+    "profit_factor": 2.12
+   }
+  },
+  "val": {
+   "IC": 0.0355,
+   "ICIR": 0.262,
+   "IC_t": 2.32,
+   "nIC": 78,
+   "LS_ann_gross": 0.3082,
+   "LS_ann_net": 0.2065,
+   "LS_sharpe_net": 0.88,
+   "TopEx_ann_net": -0.0142,
+   "turnover": 0.403,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.551,
+    "avg_bp": 41.0,
+    "wl_ratio": 1.25,
+    "profit_factor": 1.54
+   }
+  }
+ },
+ "random:peer_mom": {
+  "dev": {
+   "IC": 0.0002,
+   "ICIR": 0.011,
+   "IC_t": 0.23,
+   "nIC": 390,
+   "LS_ann_gross": -0.003,
+   "LS_ann_net": -0.1519,
+   "LS_sharpe_net": -4.27,
+   "TopEx_ann_net": -0.0855,
+   "turnover": 0.591,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.223,
+    "avg_bp": -30.1,
+    "wl_ratio": 0.72,
+    "profit_factor": 0.21
+   }
+  },
+  "val": {
+   "IC": 0.0004,
+   "ICIR": 0.03,
+   "IC_t": 0.27,
+   "nIC": 78,
+   "LS_ann_gross": 0.0038,
+   "LS_ann_net": -0.1451,
+   "LS_sharpe_net": -6.7,
+   "TopEx_ann_net": -0.0754,
+   "turnover": 0.591,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.167,
+    "avg_bp": -28.8,
+    "wl_ratio": 0.48,
+    "profit_factor": 0.1
+   }
+  }
+ },
+ "random:peer_gap": {
+  "dev": {
+   "IC": 0.0562,
+   "ICIR": 0.412,
+   "IC_t": 8.14,
+   "nIC": 390,
+   "LS_ann_gross": 0.4115,
+   "LS_ann_net": 0.2745,
+   "LS_sharpe_net": 1.44,
+   "TopEx_ann_net": -0.0143,
+   "turnover": 0.543,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.559,
+    "avg_bp": 54.5,
+    "wl_ratio": 1.37,
+    "profit_factor": 1.74
+   }
+  },
+  "val": {
+   "IC": 0.0517,
+   "ICIR": 0.314,
+   "IC_t": 2.78,
+   "nIC": 78,
+   "LS_ann_gross": 0.5129,
+   "LS_ann_net": 0.3791,
+   "LS_sharpe_net": 1.36,
+   "TopEx_ann_net": 0.0672,
+   "turnover": 0.531,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.679,
+    "avg_bp": 75.2,
+    "wl_ratio": 0.96,
+    "profit_factor": 2.04
+   }
+  }
+ },
+ "random:zspread": {
+  "dev": {
+   "IC": 0.0588,
+   "ICIR": 0.477,
+   "IC_t": 9.42,
+   "nIC": 390,
+   "LS_ann_gross": 0.4121,
+   "LS_ann_net": 0.3025,
+   "LS_sharpe_net": 1.75,
+   "TopEx_ann_net": 0.0564,
+   "turnover": 0.435,
+   "LS_trades_net": {
+    "n": 390,
+    "win": 0.608,
+    "avg_bp": 60.0,
+    "wl_ratio": 1.24,
+    "profit_factor": 1.93
+   }
+  },
+  "val": {
+   "IC": 0.0508,
+   "ICIR": 0.329,
+   "IC_t": 2.91,
+   "nIC": 78,
+   "LS_ann_gross": 0.3769,
+   "LS_ann_net": 0.2738,
+   "LS_sharpe_net": 1.07,
+   "TopEx_ann_net": 0.0232,
+   "turnover": 0.409,
+   "LS_trades_net": {
+    "n": 78,
+    "win": 0.603,
+    "avg_bp": 54.3,
+    "wl_ratio": 1.11,
+    "profit_factor": 1.68
+   }
+  }
+ }
+}

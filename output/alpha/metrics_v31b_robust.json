@@ -1,0 +1,155 @@
+{
+ "v21_base": {
+  "dev": {
+   "ExAnn": 0.0747,
+   "IR": 0.59,
+   "ExMDD": 0.2731
+  },
+  "val": {
+   "ExAnn": 0.1215,
+   "IR": 0.61,
+   "ExMDD": 0.2051
+  },
+  "full": {
+   "ExAnn": 0.0831,
+   "IR": 0.58,
+   "ExMDD": 0.2731
+  }
+ },
+ "sweep_hi": {
+  "dev": {
+   "ExAnn": 0.1018,
+   "IR": 0.77,
+   "ExMDD": 0.2592
+  },
+  "val": {
+   "ExAnn": 0.1459,
+   "IR": 0.69,
+   "ExMDD": 0.2223
+  },
+  "full": {
+   "ExAnn": 0.1097,
+   "IR": 0.72,
+   "ExMDD": 0.2592
+  }
+ },
+ "sweep_hi_LAG": {
+  "dev": {
+   "ExAnn": 0.1041,
+   "IR": 0.78,
+   "ExMDD": 0.2644
+  },
+  "val": {
+   "ExAnn": 0.1327,
+   "IR": 0.64,
+   "ExMDD": 0.2197
+  },
+  "full": {
+   "ExAnn": 0.1093,
+   "IR": 0.72,
+   "ExMDD": 0.2644
+  }
+ },
+ "osize_hi": {
+  "dev": {
+   "ExAnn": 0.1049,
+   "IR": 0.76,
+   "ExMDD": 0.2553
+  },
+  "val": {
+   "ExAnn": 0.1359,
+   "IR": 0.63,
+   "ExMDD": 0.2345
+  },
+  "full": {
+   "ExAnn": 0.1105,
+   "IR": 0.7,
+   "ExMDD": 0.2553
+  }
+ },
+ "osize_hi_LAG": {
+  "dev": {
+   "ExAnn": 0.1035,
+   "IR": 0.75,
+   "ExMDD": 0.2507
+  },
+  "val": {
+   "ExAnn": 0.1369,
+   "IR": 0.63,
+   "ExMDD": 0.2361
+  },
+  "full": {
+   "ExAnn": 0.1096,
+   "IR": 0.7,
+   "ExMDD": 0.2507
+  }
+ },
+ "patient_lo": {
+  "dev": {
+   "ExAnn": 0.1017,
+   "IR": 0.76,
+   "ExMDD": 0.2464
+  },
+  "val": {
+   "ExAnn": 0.1506,
+   "IR": 0.72,
+   "ExMDD": 0.2157
+  },
+  "full": {
+   "ExAnn": 0.1105,
+   "IR": 0.73,
+   "ExMDD": 0.2464
+  }
+ },
+ "sweep+osize": {
+  "dev": {
+   "ExAnn": 0.1265,
+   "IR": 0.89,
+   "ExMDD": 0.2493
+  },
+  "val": {
+   "ExAnn": 0.1609,
+   "IR": 0.7,
+   "ExMDD": 0.2495
+  },
+  "full": {
+   "ExAnn": 0.1327,
+   "IR": 0.81,
+   "ExMDD": 0.2495
+  }
+ },
+ "sweep_hi_NOnl5": {
+  "dev": {
+   "ExAnn": 0.1054,
+   "IR": 0.8,
+   "ExMDD": 0.2475
+  },
+  "val": {
+   "ExAnn": 0.1441,
+   "IR": 0.69,
+   "ExMDD": 0.211
+  },
+  "full": {
+   "ExAnn": 0.1124,
+   "IR": 0.75,
+   "ExMDD": 0.2475
+  }
+ },
+ "osize_hi_NOnl5": {
+  "dev": {
+   "ExAnn": 0.0974,
+   "IR": 0.73,
+   "ExMDD": 0.26
+  },
+  "val": {
+   "ExAnn": 0.1309,
+   "IR": 0.62,
+   "ExMDD": 0.2258
+  },
+  "full": {
+   "ExAnn": 0.1035,
+   "IR": 0.68,
+   "ExMDD": 0.26
+  }
+ }
+}

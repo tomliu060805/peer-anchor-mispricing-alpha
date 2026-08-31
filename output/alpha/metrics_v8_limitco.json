@@ -1,0 +1,83 @@
+{
+ "price_full": {
+  "dev": {
+   "IC": 0.0555,
+   "ICIR": 0.588,
+   "Sharpe": 2.16,
+   "TopEx_ann": 0.023,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0456,
+   "ICIR": 0.454,
+   "Sharpe": 1.57,
+   "TopEx_ann": 0.046,
+   "cov": 4737
+  }
+ },
+ "limitco": {
+  "dev": {
+   "IC": 0.0551,
+   "ICIR": 0.471,
+   "Sharpe": 1.81,
+   "TopEx_ann": 0.022,
+   "cov": 2126
+  },
+  "val": {
+   "IC": 0.0593,
+   "ICIR": 0.498,
+   "Sharpe": 2.07,
+   "TopEx_ann": 0.037,
+   "cov": 1893
+  }
+ },
+ "price_on_limitco_cov": {
+  "dev": {
+   "IC": 0.0611,
+   "ICIR": 0.655,
+   "Sharpe": 2.42,
+   "TopEx_ann": 0.026,
+   "cov": 2126
+  },
+  "val": {
+   "IC": 0.0634,
+   "ICIR": 0.611,
+   "Sharpe": 2.33,
+   "TopEx_ann": 0.066,
+   "cov": 1893
+  }
+ },
+ "blend_common": {
+  "dev": {
+   "IC": 0.0637,
+   "ICIR": 0.559,
+   "Sharpe": 2.23,
+   "TopEx_ann": 0.045,
+   "cov": 2126
+  },
+  "val": {
+   "IC": 0.0661,
+   "ICIR": 0.543,
+   "Sharpe": 2.22,
+   "TopEx_ann": 0.064,
+   "cov": 1893
+  }
+ },
+ "hybrid_fullcov": {
+  "dev": {
+   "IC": 0.0521,
+   "ICIR": 0.462,
+   "Sharpe": 1.67,
+   "TopEx_ann": 0.021,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0471,
+   "ICIR": 0.471,
+   "Sharpe": 1.6,
+   "TopEx_ann": 0.038,
+   "cov": 4737
+  }
+ },
+ "signal_rank_corr": 0.615
+}

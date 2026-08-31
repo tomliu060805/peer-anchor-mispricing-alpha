@@ -1,0 +1,58 @@
+{
+ "v21_base": {
+  "dev": {
+   "ExAnn": 0.0747,
+   "IR": 0.59
+  },
+  "val": {
+   "ExAnn": 0.1215,
+   "IR": 0.61
+  },
+  "full": {
+   "ExAnn": 0.0831,
+   "IR": 0.58
+  }
+ },
+ "net_crossonly": {
+  "dev": {
+   "ExAnn": 0.0617,
+   "IR": 0.51
+  },
+  "val": {
+   "ExAnn": 0.1373,
+   "IR": 0.67
+  },
+  "full": {
+   "ExAnn": 0.0751,
+   "IR": 0.54
+  }
+ },
+ "net_sameonly": {
+  "dev": {
+   "ExAnn": 0.0943,
+   "IR": 0.72
+  },
+  "val": {
+   "ExAnn": 0.0663,
+   "IR": 0.39
+  },
+  "full": {
+   "ExAnn": 0.0892,
+   "IR": 0.62
+  }
+ },
+ "sel_crossfilter": {
+  "dev": {
+   "ExAnn": 0.0773,
+   "IR": 0.59
+  },
+  "val": {
+   "ExAnn": 0.0993,
+   "IR": 0.5
+  },
+  "full": {
+   "ExAnn": 0.0813,
+   "IR": 0.55
+  }
+ }
+}

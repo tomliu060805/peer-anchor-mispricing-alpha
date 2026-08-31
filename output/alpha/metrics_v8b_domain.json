@@ -1,0 +1,66 @@
+{
+ "price_dom_own_lim2": {
+  "dev": {
+   "IC": 0.0635,
+   "ICIR": 0.676,
+   "Sharpe": 2.5,
+   "TopEx_ann": 0.032,
+   "cov": 2114
+  },
+  "val": {
+   "IC": 0.0678,
+   "ICIR": 0.649,
+   "Sharpe": 2.37,
+   "TopEx_ann": 0.079,
+   "cov": 1958
+  }
+ },
+ "price_dom_own_lim1": {
+  "dev": {
+   "IC": 0.0607,
+   "ICIR": 0.646,
+   "Sharpe": 2.4,
+   "TopEx_ann": 0.031,
+   "cov": 2547
+  },
+  "val": {
+   "IC": 0.0594,
+   "ICIR": 0.576,
+   "Sharpe": 2.21,
+   "TopEx_ann": 0.083,
+   "cov": 2835
+  }
+ },
+ "price_dom_limcoedge": {
+  "dev": {
+   "IC": 0.0611,
+   "ICIR": 0.655,
+   "Sharpe": 2.42,
+   "TopEx_ann": 0.026,
+   "cov": 2126
+  },
+  "val": {
+   "IC": 0.0634,
+   "ICIR": 0.611,
+   "Sharpe": 2.33,
+   "TopEx_ann": 0.066,
+   "cov": 1893
+  }
+ },
+ "price_dom_notlim": {
+  "dev": {
+   "IC": 0.0398,
+   "ICIR": 0.415,
+   "Sharpe": 0.79,
+   "TopEx_ann": -0.009,
+   "cov": 1045
+  },
+  "val": {
+   "IC": 0.0376,
+   "ICIR": 0.358,
+   "Sharpe": 0.92,
+   "TopEx_ann": 0.018,
+   "cov": 2844
+  }
+ }
+}

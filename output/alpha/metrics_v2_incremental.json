@@ -1,0 +1,284 @@
+{
+ "rev:dev": {
+  "IC": 0.0613,
+  "ICIR": 0.403,
+  "t": 7.96,
+  "n": 390
+ },
+ "rev:val": {
+  "IC": 0.0557,
+  "ICIR": 0.319,
+  "t": 2.82,
+  "n": 78
+ },
+ "resid:peer_mom:orth_rev:dev": {
+  "IC": 0.0065,
+  "ICIR": 0.084,
+  "t": 1.65,
+  "n": 390
+ },
+ "resid:peer_mom:orth_rev:val": {
+  "IC": 0.0097,
+  "ICIR": 0.119,
+  "t": 1.05,
+  "n": 78
+ },
+ "resid:peer_mom:fmb_dev": {
+  "coef": 0.012,
+  "t": 2.98
+ },
+ "resid:peer_mom:fmb_val": {
+  "coef": 0.0109,
+  "t": 0.97
+ },
+ "resid:peer_gap:orth_rev:dev": {
+  "IC": 0.0392,
+  "ICIR": 0.547,
+  "t": 10.8,
+  "n": 390
+ },
+ "resid:peer_gap:orth_rev:val": {
+  "IC": 0.0144,
+  "ICIR": 0.193,
+  "t": 1.71,
+  "n": 78
+ },
+ "resid:peer_gap:fmb_dev": {
+  "coef": 0.0463,
+  "t": 9.28
+ },
+ "resid:peer_gap:fmb_val": {
+  "coef": 0.0229,
+  "t": 1.72
+ },
+ "resid:zspread:orth_rev:dev": {
+  "IC": 0.0384,
+  "ICIR": 0.457,
+  "t": 9.03,
+  "n": 390
+ },
+ "resid:zspread:orth_rev:val": {
+  "IC": 0.0214,
+  "ICIR": 0.23,
+  "t": 2.04,
+  "n": 78
+ },
+ "resid:zspread:fmb_dev": {
+  "coef": 0.037,
+  "t": 7.81
+ },
+ "resid:zspread:fmb_val": {
+  "coef": 0.0247,
+  "t": 1.99
+ },
+ "resid:peer_mom:orth:h5:dev": {
+  "IC": 0.0065,
+  "ICIR": 0.084,
+  "t": 1.65,
+  "n": 390
+ },
+ "resid:peer_mom:orth:h10:dev": {
+  "IC": 0.0071,
+  "ICIR": 0.085,
+  "t": 1.69,
+  "n": 390
+ },
+ "resid:peer_mom:orth:h21:dev": {
+  "IC": 0.004,
+  "ICIR": 0.047,
+  "t": 0.92,
+  "n": 390
+ },
+ "resid:peer_mom:orth:h42:dev": {
+  "IC": 0.0036,
+  "ICIR": 0.048,
+  "t": 0.95,
+  "n": 390
+ },
+ "resid:peer_mom:orth:h63:dev": {
+  "IC": 0.0057,
+  "ICIR": 0.075,
+  "t": 1.48,
+  "n": 390
+ },
+ "industry:peer_mom:orth_rev:dev": {
+  "IC": 0.0049,
+  "ICIR": 0.061,
+  "t": 1.21,
+  "n": 390
+ },
+ "industry:peer_mom:orth_rev:val": {
+  "IC": -0.0164,
+  "ICIR": -0.15,
+  "t": -1.33,
+  "n": 78
+ },
+ "industry:peer_mom:fmb_dev": {
+  "coef": 0.0069,
+  "t": 1.66
+ },
+ "industry:peer_mom:fmb_val": {
+  "coef": -0.0174,
+  "t": -1.33
+ },
+ "industry:peer_gap:orth_rev:dev": {
+  "IC": 0.0362,
+  "ICIR": 0.457,
+  "t": 9.02,
+  "n": 390
+ },
+ "industry:peer_gap:orth_rev:val": {
+  "IC": -0.0097,
+  "ICIR": -0.095,
+  "t": -0.84,
+  "n": 78
+ },
+ "industry:peer_gap:fmb_dev": {
+  "coef": 0.0428,
+  "t": 7.53
+ },
+ "industry:peer_gap:fmb_val": {
+  "coef": -0.0172,
+  "t": -0.88
+ },
+ "industry:zspread:orth_rev:dev": {
+  "IC": 0.0364,
+  "ICIR": 0.398,
+  "t": 7.86,
+  "n": 390
+ },
+ "industry:zspread:orth_rev:val": {
+  "IC": 0.0031,
+  "ICIR": 0.03,
+  "t": 0.26,
+  "n": 78
+ },
+ "industry:zspread:fmb_dev": {
+  "coef": 0.0344,
+  "t": 6.7
+ },
+ "industry:zspread:fmb_val": {
+  "coef": 0.0041,
+  "t": 0.31
+ },
+ "industry:peer_mom:orth:h5:dev": {
+  "IC": 0.0049,
+  "ICIR": 0.061,
+  "t": 1.21,
+  "n": 390
+ },
+ "industry:peer_mom:orth:h10:dev": {
+  "IC": 0.0048,
+  "ICIR": 0.059,
+  "t": 1.16,
+  "n": 390
+ },
+ "industry:peer_mom:orth:h21:dev": {
+  "IC": -0.0021,
+  "ICIR": -0.025,
+  "t": -0.5,
+  "n": 390
+ },
+ "industry:peer_mom:orth:h42:dev": {
+  "IC": -0.0029,
+  "ICIR": -0.037,
+  "t": -0.72,
+  "n": 390
+ },
+ "industry:peer_mom:orth:h63:dev": {
+  "IC": -0.0028,
+  "ICIR": -0.04,
+  "t": -0.8,
+  "n": 390
+ },
+ "random:peer_mom:orth_rev:dev": {
+  "IC": 0.0005,
+  "ICIR": 0.023,
+  "t": 0.46,
+  "n": 390
+ },
+ "random:peer_mom:orth_rev:val": {
+  "IC": 0.0004,
+  "ICIR": 0.035,
+  "t": 0.31,
+  "n": 78
+ },
+ "random:peer_mom:fmb_dev": {
+  "coef": 0.0002,
+  "t": 0.24
+ },
+ "random:peer_mom:fmb_val": {
+  "coef": 0.0004,
+  "t": 0.31
+ },
+ "random:peer_gap:orth_rev:dev": {
+  "IC": 0.033,
+  "ICIR": 0.427,
+  "t": 8.44,
+  "n": 390
+ },
+ "random:peer_gap:orth_rev:val": {
+  "IC": 0.005,
+  "ICIR": 0.341,
+  "t": 3.01,
+  "n": 78
+ },
+ "random:peer_gap:fmb_dev": {
+  "coef": 0.0409,
+  "t": 8.05
+ },
+ "random:peer_gap:fmb_val": {
+  "coef": 0.0124,
+  "t": 2.95
+ },
+ "random:zspread:orth_rev:dev": {
+  "IC": 0.0391,
+  "ICIR": 0.386,
+  "t": 7.62,
+  "n": 390
+ },
+ "random:zspread:orth_rev:val": {
+  "IC": 0.0181,
+  "ICIR": 0.159,
+  "t": 1.4,
+  "n": 78
+ },
+ "random:zspread:fmb_dev": {
+  "coef": 0.0382,
+  "t": 6.58
+ },
+ "random:zspread:fmb_val": {
+  "coef": 0.0219,
+  "t": 1.41
+ },
+ "random:peer_mom:orth:h5:dev": {
+  "IC": 0.0005,
+  "ICIR": 0.023,
+  "t": 0.46,
+  "n": 390
+ },
+ "random:peer_mom:orth:h10:dev": {
+  "IC": -0.0002,
+  "ICIR": -0.012,
+  "t": -0.24,
+  "n": 390
+ },
+ "random:peer_mom:orth:h21:dev": {
+  "IC": -0.0003,
+  "ICIR": -0.013,
+  "t": -0.25,
+  "n": 390
+ },
+ "random:peer_mom:orth:h42:dev": {
+  "IC": -0.0009,
+  "ICIR": -0.048,
+  "t": -0.95,
+  "n": 390
+ },
+ "random:peer_mom:orth:h63:dev": {
+  "IC": 0.0004,
+  "ICIR": 0.025,
+  "t": 0.49,
+  "n": 390
+ }
+}
