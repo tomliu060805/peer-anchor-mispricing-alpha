@@ -1,0 +1,122 @@
+{
+ "raw_dev": {
+  "P+S+": {
+   "IC": 0.0803,
+   "IC_t": 15.76,
+   "long_ex_bp": -15.3,
+   "long_t": -1.13,
+   "long_share%": 14.1
+  },
+  "P+S-": {
+   "IC": -0.0144,
+   "IC_t": -2.44,
+   "long_ex_bp": 3.6,
+   "long_t": 0.65,
+   "long_share%": 46.1
+  },
+  "P-S-": {
+   "IC": 0.0208,
+   "IC_t": 3.88,
+   "long_ex_bp": 4.6,
+   "long_t": 0.52,
+   "long_share%": 39.8
+  },
+  "P-S+": {
+   "IC": 0.0728,
+   "IC_t": 12.18,
+   "long_ex_bp": null,
+   "long_t": null,
+   "long_share%": 0.0
+  }
+ },
+ "raw_val": {
+  "P+S+": {
+   "IC": 0.0892,
+   "IC_t": 7.46,
+   "long_ex_bp": -10.0,
+   "long_t": -0.33,
+   "long_share%": 11.7
+  },
+  "P+S-": {
+   "IC": -0.009,
+   "IC_t": -0.62,
+   "long_ex_bp": 31.3,
+   "long_t": 1.53,
+   "long_share%": 43.9
+  },
+  "P-S-": {
+   "IC": 0.0243,
+   "IC_t": 1.91,
+   "long_ex_bp": 29.6,
+   "long_t": 1.2,
+   "long_share%": 44.5
+  },
+  "P-S+": {
+   "IC": 0.1021,
+   "IC_t": 7.88,
+   "long_ex_bp": null,
+   "long_t": null,
+   "long_share%": 0.0
+  }
+ },
+ "demean_dev": {
+  "P+S+": {
+   "IC": 0.0752,
+   "IC_t": 16.79,
+   "long_ex_bp": -21.6,
+   "long_t": -1.72,
+   "long_share%": 6.8
+  },
+  "P+S-": {
+   "IC": -0.0076,
+   "IC_t": -1.56,
+   "long_ex_bp": 25.7,
+   "long_t": 5.72,
+   "long_share%": 59.2
+  },
+  "P-S-": {
+   "IC": 0.0141,
+   "IC_t": 3.05,
+   "long_ex_bp": 16.0,
+   "long_t": 1.81,
+   "long_share%": 34.0
+  },
+  "P-S+": {
+   "IC": 0.0821,
+   "IC_t": 17.13,
+   "long_ex_bp": null,
+   "long_t": null,
+   "long_share%": 0.0
+  }
+ },
+ "demean_val": {
+  "P+S+": {
+   "IC": 0.0941,
+   "IC_t": 8.32,
+   "long_ex_bp": 1.6,
+   "long_t": 0.07,
+   "long_share%": 7.7
+  },
+  "P+S-": {
+   "IC": -0.0191,
+   "IC_t": -1.45,
+   "long_ex_bp": 29.5,
+   "long_t": 1.6,
+   "long_share%": 56.2
+  },
+  "P-S-": {
+   "IC": 0.0094,
+   "IC_t": 0.83,
+   "long_ex_bp": 29.2,
+   "long_t": 1.12,
+   "long_share%": 36.1
+  },
+  "P-S+": {
+   "IC": 0.1001,
+   "IC_t": 7.75,
+   "long_ex_bp": null,
+   "long_t": null,
+   "long_share%": 0.0
+  }
+ }
+}

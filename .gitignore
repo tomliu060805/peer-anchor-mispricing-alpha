@@ -1,0 +1,19 @@
+# 大文件与中间产物
+cache/
+data/*.parquet
+output/**/*.npz
+output/**/*.npy
+output/**/*.pkl
+output/**/*.log
+papers/*.pdf
+docs/*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store

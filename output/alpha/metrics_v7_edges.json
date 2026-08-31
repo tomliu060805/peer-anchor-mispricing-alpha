@@ -1,0 +1,130 @@
+{
+ "price:gap20": {
+  "dev": {
+   "IC": 0.0555,
+   "ICIR": 0.588,
+   "Sharpe": 2.16,
+   "TopEx_ann": 0.023,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0456,
+   "ICIR": 0.454,
+   "Sharpe": 1.57,
+   "TopEx_ann": 0.046,
+   "cov": 4737
+  }
+ },
+ "volume:gap20": {
+  "dev": {
+   "IC": 0.0538,
+   "ICIR": 0.511,
+   "Sharpe": 1.86,
+   "TopEx_ann": 0.012,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0474,
+   "ICIR": 0.36,
+   "Sharpe": 1.46,
+   "TopEx_ann": 0.068,
+   "cov": 4737
+  }
+ },
+ "dual:gap20": {
+  "dev": {
+   "IC": 0.0539,
+   "ICIR": 0.587,
+   "Sharpe": 2.27,
+   "TopEx_ann": 0.027,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0413,
+   "ICIR": 0.403,
+   "Sharpe": 1.42,
+   "TopEx_ann": 0.041,
+   "cov": 4737
+  }
+ },
+ "limitco:gap20": {
+  "dev": {
+   "IC": 0.0551,
+   "ICIR": 0.471,
+   "Sharpe": 1.81,
+   "TopEx_ann": 0.022,
+   "cov": 2126
+  },
+  "val": {
+   "IC": 0.0593,
+   "ICIR": 0.498,
+   "Sharpe": 2.07,
+   "TopEx_ann": 0.037,
+   "cov": 1893
+  }
+ },
+ "leadlag:gap20": {
+  "dev": {
+   "IC": 0.054,
+   "ICIR": 0.542,
+   "Sharpe": 2.02,
+   "TopEx_ann": 0.032,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0437,
+   "ICIR": 0.394,
+   "Sharpe": 1.41,
+   "TopEx_ann": 0.024,
+   "cov": 4737
+  }
+ },
+ "price:gap10": {
+  "dev": {
+   "IC": 0.0513,
+   "ICIR": 0.566,
+   "Sharpe": 1.83,
+   "TopEx_ann": -0.021,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0445,
+   "ICIR": 0.41,
+   "Sharpe": 1.34,
+   "TopEx_ann": 0.01,
+   "cov": 4737
+  }
+ },
+ "price:gap20_volnorm": {
+  "dev": {
+   "IC": 0.0545,
+   "ICIR": 0.589,
+   "Sharpe": 1.67,
+   "TopEx_ann": 0.035,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0432,
+   "ICIR": 0.437,
+   "Sharpe": 0.93,
+   "TopEx_ann": 0.044,
+   "cov": 4737
+  }
+ },
+ "dual:gap20_volnorm": {
+  "dev": {
+   "IC": 0.0528,
+   "ICIR": 0.581,
+   "Sharpe": 1.72,
+   "TopEx_ann": 0.038,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0372,
+   "ICIR": 0.362,
+   "Sharpe": 0.61,
+   "TopEx_ann": 0.036,
+   "cov": 4737
+  }
+ }
+}

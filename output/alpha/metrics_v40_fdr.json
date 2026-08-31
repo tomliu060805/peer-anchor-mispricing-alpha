@@ -1,0 +1,118 @@
+{
+  "N_variants": 178,
+  "t_max": 3.14,
+  "Bonferroni_alpha": 0.000281,
+  "t_threshold_Bonferroni": 3.45,
+  "t_threshold_BH_FDR5%": 2.38,
+  "HLZ_rule_of_thumb_t": 3.0,
+  "n_pass_bonf": 0,
+  "n_pass_bh": 34,
+  "n_pass_HLZ3": 6,
+  "top15": [
+    {
+      "file": "metrics_v34b_final343.json",
+      "variant": "best_N150",
+      "IR": 1.07,
+      "ExAnn": 0.1803,
+      "t": 3.14
+    },
+    {
+      "file": "metrics_v35_ablation.json",
+      "variant": "b15",
+      "IR": 1.05,
+      "ExAnn": 0.1718,
+      "t": 3.08
+    },
+    {
+      "file": "metrics_v34_final.json",
+      "variant": "g_20_40_40",
+      "IR": 1.04,
+      "ExAnn": 0.1718,
+      "t": 3.06
+    },
+    {
+      "file": "metrics_v35_ablation.json",
+      "variant": "b10",
+      "IR": 1.04,
+      "ExAnn": 0.1679,
+      "t": 3.06
+    },
+    {
+      "file": "metrics_v35_ablation.json",
+      "variant": "b20",
+      "IR": 1.04,
+      "ExAnn": 0.1718,
+      "t": 3.06
+    },
+    {
+      "file": "metrics_v39_dropnl5.json",
+      "variant": "v24_去nl5",
+      "IR": 1.04,
+      "ExAnn": 0.1775,
+      "t": 3.06
+    },
+    {
+      "file": "metrics_v34_final.json",
+      "variant": "g_30_40_30",
+      "IR": 1.02,
+      "ExAnn": 0.1702,
+      "t": 3.0
+    },
+    {
+      "file": "metrics_v34_final.json",
+      "variant": "g_25_45_30",
+      "IR": 1.02,
+      "ExAnn": 0.1683,
+      "t": 3.0
+    },
+    {
+      "file": "metrics_v35_ablation.json",
+      "variant": "b30",
+      "IR": 1.02,
+      "ExAnn": 0.1702,
+      "t": 3.0
+    },
+    {
+      "file": "metrics_v23_final.json",
+      "variant": "best_N150",
+      "IR": 1.0,
+      "ExAnn": 0.1674,
+      "t": 2.94
+    },
+    {
+      "file": "metrics_v34_final.json",
+      "variant": "best_N150",
+      "IR": 1.0,
+      "ExAnn": 0.1674,
+      "t": 2.94
+    },
+    {
+      "file": "metrics_v34b_final343.json",
+      "variant": "best_N250",
+      "IR": 0.99,
+      "ExAnn": 0.1605,
+      "t": 2.91
+    },
+    {
+      "file": "metrics_v39_dropnl5.json",
+      "variant": "仅osize",
+      "IR": 0.99,
+      "ExAnn": 0.1701,
+      "t": 2.91
+    },
+    {
+      "file": "metrics_v34_final.json",
+      "variant": "g_35_35_30",
+      "IR": 0.98,
+      "ExAnn": 0.1624,
+      "t": 2.88
+    },
+    {
+      "file": "metrics_v35_ablation.json",
+      "variant": "struct0_锚行为",
+      "IR": 0.98,
+      "ExAnn": 0.1568,
+      "t": 2.88
+    }
+  ]
+}

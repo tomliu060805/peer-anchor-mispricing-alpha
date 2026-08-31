@@ -1,0 +1,137 @@
+{
+ "alpha_only": {
+  "AnnRet": 0.2037,
+  "Vol": 0.2973,
+  "Sharpe": 0.77,
+  "MDD": 0.5503,
+  "ExAnn": 0.2223,
+  "ExIR": 1.48,
+  "ExMDD": 0.2882
+ },
+ "beta_CNI2000": {
+  "AnnRet": 0.0599,
+  "Vol": 0.0603,
+  "Sharpe": 0.99,
+  "MDD": 0.05
+ },
+ "fusion_CNI2000_h0.5": {
+  "AnnRet": 0.2404,
+  "Vol": 0.2974,
+  "Sharpe": 0.87,
+  "MDD": 0.5121,
+  "ExAnn": 0.2595,
+  "ExIR": 1.67,
+  "ExMDD": 0.2662
+ },
+ "fusion_CNI2000_h1.0": {
+  "AnnRet": 0.2769,
+  "Vol": 0.3005,
+  "Sharpe": 0.97,
+  "MDD": 0.4721,
+  "ExAnn": 0.2966,
+  "ExIR": 1.79,
+  "ExMDD": 0.2439
+ },
+ "fusion_CNI2000_h1.5": {
+  "AnnRet": 0.3135,
+  "Vol": 0.3066,
+  "Sharpe": 1.04,
+  "MDD": 0.4393,
+  "ExAnn": 0.3337,
+  "ExIR": 1.84,
+  "ExMDD": 0.2422
+ },
+ "fusion_CNI2000_h2.0": {
+  "AnnRet": 0.3499,
+  "Vol": 0.3154,
+  "Sharpe": 1.11,
+  "MDD": 0.4133,
+  "ExAnn": 0.3707,
+  "ExIR": 1.83,
+  "ExMDD": 0.2443
+ },
+ "beta_CSI1000": {
+  "AnnRet": 0.0505,
+  "Vol": 0.0611,
+  "Sharpe": 0.84,
+  "MDD": 0.0573
+ },
+ "fusion_CSI1000_h0.5": {
+  "AnnRet": 0.2348,
+  "Vol": 0.2976,
+  "Sharpe": 0.86,
+  "MDD": 0.5184,
+  "ExAnn": 0.2538,
+  "ExIR": 1.64,
+  "ExMDD": 0.2716
+ },
+ "fusion_CSI1000_h1.0": {
+  "AnnRet": 0.2655,
+  "Vol": 0.301,
+  "Sharpe": 0.93,
+  "MDD": 0.4858,
+  "ExAnn": 0.285,
+  "ExIR": 1.73,
+  "ExMDD": 0.2549
+ },
+ "fusion_CSI1000_h1.5": {
+  "AnnRet": 0.2958,
+  "Vol": 0.3074,
+  "Sharpe": 1.0,
+  "MDD": 0.4612,
+  "ExAnn": 0.3157,
+  "ExIR": 1.74,
+  "ExMDD": 0.2509
+ },
+ "fusion_CSI1000_h2.0": {
+  "AnnRet": 0.3257,
+  "Vol": 0.3167,
+  "Sharpe": 1.05,
+  "MDD": 0.4439,
+  "ExAnn": 0.3461,
+  "ExIR": 1.72,
+  "ExMDD": 0.2558
+ },
+ "beta_CSI500": {
+  "AnnRet": 0.0304,
+  "Vol": 0.0529,
+  "Sharpe": 0.59,
+  "MDD": 0.0776
+ },
+ "fusion_CSI500_h0.5": {
+  "AnnRet": 0.2229,
+  "Vol": 0.2971,
+  "Sharpe": 0.83,
+  "MDD": 0.5266,
+  "ExAnn": 0.2417,
+  "ExIR": 1.58,
+  "ExMDD": 0.2793
+ },
+ "fusion_CSI500_h1.0": {
+  "AnnRet": 0.2414,
+  "Vol": 0.2992,
+  "Sharpe": 0.87,
+  "MDD": 0.5028,
+  "ExAnn": 0.2605,
+  "ExIR": 1.62,
+  "ExMDD": 0.2704
+ },
+ "fusion_CSI500_h1.5": {
+  "AnnRet": 0.2594,
+  "Vol": 0.3037,
+  "Sharpe": 0.91,
+  "MDD": 0.4886,
+  "ExAnn": 0.2787,
+  "ExIR": 1.62,
+  "ExMDD": 0.2639
+ },
+ "fusion_CSI500_h2.0": {
+  "AnnRet": 0.2767,
+  "Vol": 0.3103,
+  "Sharpe": 0.94,
+  "MDD": 0.4803,
+  "ExAnn": 0.2964,
+  "ExIR": 1.58,
+  "ExMDD": 0.2656
+ }
+}

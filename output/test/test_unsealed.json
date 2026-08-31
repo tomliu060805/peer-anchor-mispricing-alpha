@@ -1,0 +1,67 @@
+{
+ "criteria": {
+  "pre_registered": "docs/open_issues.md",
+  "unseal_date": "2026-08-28",
+  "rule": {
+   "pass": "ExAnn>0 and IR>0.5",
+   "doubt": "ExAnn>0 and IR<=0.5",
+   "fail": "ExAnn<=0"
+  },
+  "config": "v27(五锚40%+微观行为40%+结构20%, N200, 缓冲带600, 周调) + 融合 h=1.0 (CNI2000破位空头)",
+  "cost": "双边20bp",
+  "benchmark": "中证全指000985",
+  "test_start": "2024-08-19"
+ },
+ "alpha_weekly_test": {
+  "n": 96,
+  "ExAnn": 0.1944,
+  "IR": 1.24,
+  "ExMDD": 0.2189,
+  "win": 0.562,
+  "avg_bp": 37.6,
+  "AbsAnn": 0.4955,
+  "AbsMDD": 0.2439,
+  "verdict": "PASS 通过"
+ },
+ "alpha_weekly_val_ref": {
+  "n": 78,
+  "ExAnn": 0.186,
+  "IR": 0.84,
+  "ExMDD": 0.2386,
+  "win": 0.628,
+  "avg_bp": 39.5,
+  "AbsAnn": 0.0183,
+  "AbsMDD": 0.2981
+ },
+ "alpha_daily_test": {
+  "n": 481,
+  "ExAnn": 0.1954,
+  "IR": 1.2,
+  "ExMDD": 0.2367,
+  "win": 0.538,
+  "avg_bp": 7.6,
+  "AbsAnn": 0.4972,
+  "AbsMDD": 0.2728
+ },
+ "beta_test": {
+  "n": 481,
+  "ExAnn": 0.0127,
+  "IR": 0.36,
+  "ExMDD": 0.0305,
+  "win": 0.021,
+  "avg_bp": 0.5,
+  "AbsAnn": 0.0127,
+  "AbsMDD": 0.0305
+ },
+ "fusion_test": {
+  "n": 481,
+  "ExAnn": 0.2115,
+  "IR": 1.26,
+  "ExMDD": 0.2338,
+  "win": 0.541,
+  "avg_bp": 8.1,
+  "AbsAnn": 0.5174,
+  "AbsMDD": 0.2745,
+  "verdict": "PASS 通过"
+ }
+}

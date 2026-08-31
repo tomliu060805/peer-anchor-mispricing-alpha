@@ -1,0 +1,282 @@
+{
+ "combo_raw_full": {
+  "dev": {
+   "IC": 0.0578,
+   "ICIR": 0.589,
+   "IC_t": 11.61,
+   "Sharpe_LS": 2.24,
+   "TopEx_ann": 0.052,
+   "TopEx_Sharpe": 0.87,
+   "n": 388,
+   "win": 0.518,
+   "avg_bp": 10.3,
+   "pf": 1.41,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0461,
+   "ICIR": 0.459,
+   "IC_t": 4.05,
+   "Sharpe_LS": 1.47,
+   "TopEx_ann": 0.048,
+   "TopEx_Sharpe": 0.46,
+   "n": 78,
+   "win": 0.462,
+   "avg_bp": 9.5,
+   "pf": 1.34,
+   "cov": 4737
+  }
+ },
+ "combo_neu_full": {
+  "dev": {
+   "IC": 0.0503,
+   "ICIR": 0.703,
+   "IC_t": 13.84,
+   "Sharpe_LS": 2.71,
+   "TopEx_ann": 0.031,
+   "TopEx_Sharpe": 0.67,
+   "n": 387,
+   "win": 0.506,
+   "avg_bp": 6.2,
+   "pf": 1.29,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0303,
+   "ICIR": 0.5,
+   "IC_t": 4.42,
+   "Sharpe_LS": 1.75,
+   "TopEx_ann": -0.053,
+   "TopEx_Sharpe": -1.31,
+   "n": 78,
+   "win": 0.385,
+   "avg_bp": -10.6,
+   "pf": 0.6,
+   "cov": 4737
+  }
+ },
+ "combo_raw_dom": {
+  "dev": {
+   "IC": 0.0666,
+   "ICIR": 0.684,
+   "IC_t": 13.47,
+   "Sharpe_LS": 2.64,
+   "TopEx_ann": 0.076,
+   "TopEx_Sharpe": 1.15,
+   "n": 388,
+   "win": 0.541,
+   "avg_bp": 15.0,
+   "pf": 1.6,
+   "cov": 2114
+  },
+  "val": {
+   "IC": 0.0709,
+   "ICIR": 0.692,
+   "IC_t": 6.11,
+   "Sharpe_LS": 2.44,
+   "TopEx_ann": 0.101,
+   "TopEx_Sharpe": 0.97,
+   "n": 78,
+   "win": 0.487,
+   "avg_bp": 20.0,
+   "pf": 1.91,
+   "cov": 1958
+  }
+ },
+ "combo_neu_dom": {
+  "dev": {
+   "IC": 0.0583,
+   "ICIR": 0.784,
+   "IC_t": 15.43,
+   "Sharpe_LS": 3.14,
+   "TopEx_ann": 0.047,
+   "TopEx_Sharpe": 0.94,
+   "n": 387,
+   "win": 0.54,
+   "avg_bp": 9.2,
+   "pf": 1.42,
+   "cov": 2114
+  },
+  "val": {
+   "IC": 0.0506,
+   "ICIR": 0.73,
+   "IC_t": 6.45,
+   "Sharpe_LS": 2.75,
+   "TopEx_ann": -0.007,
+   "TopEx_Sharpe": -0.18,
+   "n": 78,
+   "win": 0.436,
+   "avg_bp": -1.4,
+   "pf": 0.94,
+   "cov": 1958
+  }
+ },
+ "ic_by_activity_raw": {
+  "dev": {
+   "q0": {
+    "IC": 0.0521,
+    "ICIR": 0.46
+   },
+   "q1": {
+    "IC": 0.0425,
+    "ICIR": 0.39
+   },
+   "q2": {
+    "IC": 0.0588,
+    "ICIR": 0.58
+   },
+   "q3": {
+    "IC": 0.0666,
+    "ICIR": 0.63
+   },
+   "q4": {
+    "IC": 0.0707,
+    "ICIR": 0.67
+   }
+  },
+  "val": {
+   "q1": {
+    "IC": 0.0342,
+    "ICIR": 0.39
+   },
+   "q2": {
+    "IC": 0.0327,
+    "ICIR": 0.29
+   },
+   "q3": {
+    "IC": 0.0479,
+    "ICIR": 0.44
+   },
+   "q4": {
+    "IC": 0.0856,
+    "ICIR": 0.82
+   }
+  }
+ },
+ "ic_by_activity_neu": {
+  "dev": {
+   "q0": {
+    "IC": 0.0476,
+    "ICIR": 0.56
+   },
+   "q1": {
+    "IC": 0.04,
+    "ICIR": 0.49
+   },
+   "q2": {
+    "IC": 0.0539,
+    "ICIR": 0.69
+   },
+   "q3": {
+    "IC": 0.0593,
+    "ICIR": 0.69
+   },
+   "q4": {
+    "IC": 0.0623,
+    "ICIR": 0.74
+   }
+  },
+  "val": {
+   "q1": {
+    "IC": 0.0234,
+    "ICIR": 0.39
+   },
+   "q2": {
+    "IC": 0.019,
+    "ICIR": 0.27
+   },
+   "q3": {
+    "IC": 0.0306,
+    "ICIR": 0.44
+   },
+   "q4": {
+    "IC": 0.0651,
+    "ICIR": 0.89
+   }
+  }
+ },
+ "port_baseline_EW": {
+  "dev": {
+   "IC": 0.0578,
+   "ICIR": 0.589,
+   "IC_t": 11.61,
+   "Sharpe_LS": 2.24,
+   "TopEx_ann": 0.052,
+   "TopEx_Sharpe": 0.87,
+   "n": 388,
+   "win": 0.518,
+   "avg_bp": 10.3,
+   "pf": 1.41,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0461,
+   "ICIR": 0.459,
+   "IC_t": 4.05,
+   "Sharpe_LS": 1.47,
+   "TopEx_ann": 0.048,
+   "TopEx_Sharpe": 0.46,
+   "n": 78,
+   "win": 0.462,
+   "avg_bp": 9.5,
+   "pf": 1.34,
+   "cov": 4737
+  }
+ },
+ "port_domain_only": {
+  "dev": {
+   "IC": 0.0666,
+   "ICIR": 0.684,
+   "IC_t": 13.47,
+   "Sharpe_LS": 2.64,
+   "TopEx_ann": 0.076,
+   "TopEx_Sharpe": 1.15,
+   "n": 388,
+   "win": 0.541,
+   "avg_bp": 15.0,
+   "pf": 1.6,
+   "cov": 2114
+  },
+  "val": {
+   "IC": 0.0709,
+   "ICIR": 0.692,
+   "IC_t": 6.11,
+   "Sharpe_LS": 2.44,
+   "TopEx_ann": 0.101,
+   "TopEx_Sharpe": 0.97,
+   "n": 78,
+   "win": 0.487,
+   "avg_bp": 20.0,
+   "pf": 1.91,
+   "cov": 1958
+  }
+ },
+ "port_softweight": {
+  "dev": {
+   "IC": 0.0578,
+   "ICIR": 0.589,
+   "IC_t": 11.61,
+   "Sharpe_LS": 2.17,
+   "TopEx_ann": 0.054,
+   "TopEx_Sharpe": 0.79,
+   "n": 388,
+   "win": 0.51,
+   "avg_bp": 10.7,
+   "pf": 1.37,
+   "cov": 3171
+  },
+  "val": {
+   "IC": 0.0461,
+   "ICIR": 0.459,
+   "IC_t": 4.05,
+   "Sharpe_LS": 1.4,
+   "TopEx_ann": 0.057,
+   "TopEx_Sharpe": 0.47,
+   "n": 78,
+   "win": 0.462,
+   "avg_bp": 11.3,
+   "pf": 1.38,
+   "cov": 4737
+  }
+ }
+}
