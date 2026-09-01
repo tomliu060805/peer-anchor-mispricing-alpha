@@ -17,3 +17,8 @@ venv/
 
 # OS
 .DS_Store
+
+# 凭证与实盘产出(绝不提交)
+.env
+.env.local
+output/live/
