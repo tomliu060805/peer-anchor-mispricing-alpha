@@ -1,0 +1,142 @@
+{
+ "B0_现行无约束": {
+  "ind_maxdev_median": 0.0552,
+  "max_w_median": 0.0057,
+  "sty_SIZE_median": 0.488,
+  "sty_RESVOL_median": 0.381,
+  "sty_LIQUIDTY_median": 0.444,
+  "dev": {
+   "ExAnn": 0.1666,
+   "IR": 1.23,
+   "ExMDD": 0.2378,
+   "AbsMDD": 0.3959,
+   "turn": 0.259
+  },
+  "val": {
+   "ExAnn": 0.186,
+   "IR": 0.84,
+   "ExMDD": 0.2386,
+   "AbsMDD": 0.2981,
+   "turn": 0.238
+  },
+  "test": {
+   "ExAnn": 0.1944,
+   "IR": 1.24,
+   "ExMDD": 0.2189,
+   "AbsMDD": 0.2439,
+   "turn": 0.257
+  }
+ },
+ "B1_个股1%上限": {
+  "ind_maxdev_median": 0.0552,
+  "max_w_median": 0.0057,
+  "sty_SIZE_median": 0.488,
+  "sty_RESVOL_median": 0.381,
+  "sty_LIQUIDTY_median": 0.444,
+  "dev": {
+   "ExAnn": 0.1666,
+   "IR": 1.23,
+   "ExMDD": 0.2378,
+   "AbsMDD": 0.3959,
+   "turn": 0.259
+  },
+  "val": {
+   "ExAnn": 0.186,
+   "IR": 0.84,
+   "ExMDD": 0.2386,
+   "AbsMDD": 0.2981,
+   "turn": 0.238
+  },
+  "test": {
+   "ExAnn": 0.1944,
+   "IR": 1.24,
+   "ExMDD": 0.2189,
+   "AbsMDD": 0.2439,
+   "turn": 0.257
+  }
+ },
+ "B2_+行业带±5%": {
+  "ind_maxdev_median": 0.05,
+  "max_w_median": 0.0057,
+  "sty_SIZE_median": 0.487,
+  "sty_RESVOL_median": 0.379,
+  "sty_LIQUIDTY_median": 0.445,
+  "dev": {
+   "ExAnn": 0.1668,
+   "IR": 1.23,
+   "ExMDD": 0.2367,
+   "AbsMDD": 0.3948,
+   "turn": 0.261
+  },
+  "val": {
+   "ExAnn": 0.1831,
+   "IR": 0.83,
+   "ExMDD": 0.2385,
+   "AbsMDD": 0.298,
+   "turn": 0.241
+  },
+  "test": {
+   "ExAnn": 0.1926,
+   "IR": 1.24,
+   "ExMDD": 0.2182,
+   "AbsMDD": 0.2431,
+   "turn": 0.26
+  }
+ },
+ "B3_+风格带±0.25σ": {
+  "ind_maxdev_median": 0.0543,
+  "max_w_median": 0.01,
+  "sty_SIZE_median": 0.25,
+  "sty_RESVOL_median": 0.212,
+  "sty_LIQUIDTY_median": 0.25,
+  "dev": {
+   "ExAnn": 0.1304,
+   "IR": 1.04,
+   "ExMDD": 0.2257,
+   "AbsMDD": 0.4159,
+   "turn": 0.295
+  },
+  "val": {
+   "ExAnn": 0.1273,
+   "IR": 0.69,
+   "ExMDD": 0.2115,
+   "AbsMDD": 0.2859,
+   "turn": 0.299
+  },
+  "test": {
+   "ExAnn": 0.1326,
+   "IR": 1.01,
+   "ExMDD": 0.2058,
+   "AbsMDD": 0.2347,
+   "turn": 0.328
+  }
+ },
+ "B4_行业+风格全套": {
+  "ind_maxdev_median": 0.0499,
+  "max_w_median": 0.01,
+  "sty_SIZE_median": 0.25,
+  "sty_RESVOL_median": 0.212,
+  "sty_LIQUIDTY_median": 0.25,
+  "dev": {
+   "ExAnn": 0.1306,
+   "IR": 1.04,
+   "ExMDD": 0.2238,
+   "AbsMDD": 0.4142,
+   "turn": 0.297
+  },
+  "val": {
+   "ExAnn": 0.125,
+   "IR": 0.69,
+   "ExMDD": 0.2112,
+   "AbsMDD": 0.2849,
+   "turn": 0.301
+  },
+  "test": {
+   "ExAnn": 0.1318,
+   "IR": 1.0,
+   "ExMDD": 0.2019,
+   "AbsMDD": 0.2305,
+   "turn": 0.331
+  }
+ }
+}

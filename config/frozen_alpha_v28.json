@@ -1,0 +1,45 @@
+{
+ "version": "alpha v28 = v27 + 组合约束(B2)",
+ "frozen_date": "2026-08-31",
+ "domain": "活跃域: 过去250日收盘封涨停>=2次; 硬剔 停牌/当日封涨停/ST/域外",
+ "score": {
+  "anchor_40pct": ["价格gap/vol", "zspread", "价量双确认gap", "转移熵有向gap", "ROE gap"],
+  "behavior_40pct": ["-扫单卖占比(前5日)", "-卖单平均规模(前5日)"],
+  "structure_20pct": ["价格>=2元", "dROE未恶化"],
+  "note": "各块内部转秩后取均值, 三块按 0.4/0.4/0.2 加权"
+ },
+ "portfolio": {
+  "n_hold": 200,
+  "weight": "∝ 综合分 + 0.3",
+  "buffer": "排名跌出前600才卖(停牌/跌停顺延)",
+  "rebalance": "每5个交易日",
+  "constraints": {
+   "single_name_cap": 0.01,
+   "industry_band": 0.05,
+   "solver": "投影梯度30次迭代",
+   "adopted": "2026-08-31, 代价-0.18pp超额/IR持平, 行业最大偏离5.5%->5.0%",
+   "rejected": "风格敞口带±0.25σ判负: 压一半SIZE敞口需付6.1pp超额"
+  }
+ },
+ "execution": {
+  "path_B_default": "收盘后完整数据算 + T+1 11:30前卖/13:30-14:30买",
+  "path_A_backup": "14:50实时(逐笔用滞后窗) + 尾盘",
+  "forbidden": "开盘集中下单"
+ },
+ "cost": "双边20bp",
+ "benchmark": "中证全指 000985",
+ "split": {"dev": "2016-01-01~2022-12-31", "val": "2023-01-01~2024-08-16",
+           "test": "2024-08-19起(已于2026-08-28一次性开封, 不得再用于调参)"},
+ "evidence": {
+  "test_unsealed": "alpha周频 超额19.4%/IR1.24; 融合h=1.0 超额21.2%/IR1.26; 预注册标准SHA 25f77c5b1dad",
+  "random_baseline": "500次随机组合零基准 dev/val/test 三段100%超越, test段 z=9.0σ, 随机组合均值为负",
+  "bootstrap_ci": "test段 IR 90%CI [-0.38, 2.63] 包含0 —— 96周样本量下无法排除真实IR为零",
+  "rolling_12m_IR": "均值1.53, 区间[-1.47, 4.13], IR>0占89%"
+ },
+ "known_limits": [
+  "绝对回撤 融合后仍47%(全样本)/24%(test段), beta刹车层缺位",
+  "小盘暴露是alpha载体本身, 无法做成低风格敞口产品",
+  "beta腿test段几乎未触发(在场2.1%), 样本外证据弱于alpha腿",
+  "test段已消耗, 后续改动须配套新的预注册窗口"
+ ]
+}
