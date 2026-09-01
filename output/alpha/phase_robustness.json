@@ -1,0 +1,124 @@
+{
+ "by_phase": {
+  "phase0": {
+   "dev": {
+    "ExAnn": 0.1618,
+    "IR": 1.19,
+    "n": 341
+   },
+   "val": {
+    "ExAnn": 0.1792,
+    "IR": 0.81,
+    "n": 78
+   },
+   "test": {
+    "ExAnn": 0.2136,
+    "IR": 1.34,
+    "n": 97
+   }
+  },
+  "phase1": {
+   "dev": {
+    "ExAnn": 0.1654,
+    "IR": 1.16,
+    "n": 340
+   },
+   "val": {
+    "ExAnn": 0.1636,
+    "IR": 0.87,
+    "n": 79
+   },
+   "test": {
+    "ExAnn": 0.1934,
+    "IR": 1.28,
+    "n": 97
+   }
+  },
+  "phase2": {
+   "dev": {
+    "ExAnn": 0.1639,
+    "IR": 1.15,
+    "n": 340
+   },
+   "val": {
+    "ExAnn": 0.1786,
+    "IR": 0.9,
+    "n": 79
+   },
+   "test": {
+    "ExAnn": 0.2019,
+    "IR": 1.26,
+    "n": 97
+   }
+  },
+  "phase3": {
+   "dev": {
+    "ExAnn": 0.1807,
+    "IR": 1.21,
+    "n": 341
+   },
+   "val": {
+    "ExAnn": 0.1811,
+    "IR": 0.89,
+    "n": 79
+   },
+   "test": {
+    "ExAnn": 0.2212,
+    "IR": 1.33,
+    "n": 96
+   }
+  },
+  "phase4": {
+   "dev": {
+    "ExAnn": 0.159,
+    "IR": 1.13,
+    "n": 341
+   },
+   "val": {
+    "ExAnn": 0.1762,
+    "IR": 0.74,
+    "n": 79
+   },
+   "test": {
+    "ExAnn": 0.2258,
+    "IR": 1.42,
+    "n": 96
+   }
+  }
+ },
+ "verdict": {
+  "dev": {
+   "ExAnn_mean": 0.1662,
+   "ExAnn_min": 0.159,
+   "ExAnn_max": 0.1807,
+   "rel_spread": 0.131,
+   "IR_mean": 1.17,
+   "IR_min": 1.13,
+   "IR_max": 1.21,
+   "any_negative": false,
+   "pass": true
+  },
+  "val": {
+   "ExAnn_mean": 0.1757,
+   "ExAnn_min": 0.1636,
+   "ExAnn_max": 0.1811,
+   "rel_spread": 0.1,
+   "IR_mean": 0.84,
+   "IR_min": 0.74,
+   "IR_max": 0.9,
+   "any_negative": false,
+   "pass": true
+  },
+  "test": {
+   "ExAnn_mean": 0.2112,
+   "ExAnn_min": 0.1934,
+   "ExAnn_max": 0.2258,
+   "rel_spread": 0.153,
+   "IR_mean": 1.33,
+   "IR_min": 1.26,
+   "IR_max": 1.42,
+   "any_negative": false,
+   "pass": true
+  }
+ }
+}
