@@ -65,8 +65,28 @@ QQ 邮箱的授权码在 设置 → 账号 → 开启「POP3/SMTP服务」后生
 连通性测试:
 
 ```bash
-python src/live/send_report.py --test
+python src/live/send_report.py --test      # 只发一封测试信
+python src/live/send_report.py --top 50    # 发完整周报(含图表与 CSV)
 ```
 
 未配置 SMTP 时信号照常落地到 `output/live/`, 只是不发信——脚本会明确记一行日志,
 不会静默失败。
+
+## 邮件内容
+
+正文是 HTML, 内嵌三到四张图(`src/live/make_charts.py` 生成, 存 `output/live/charts/`):
+
+| 图 | 内容 |
+|---|---|
+| `top50_{日期}.png` | Top-50 逐股**代码 + 中文名称**, 条形按五锚/微观行为/结构三块堆叠, 右侧标综合分 |
+| `holdings_{日期}.png` | 200 只持仓的**权重分布曲线**(标出 1% 上限与等权基准) + 权重最大 40 只的代码名称与权重 |
+| `industry_{日期}.png` | 上栏行业权重 vs 活跃域基准, 下栏偏离度(±5pp 参考线) |
+| `ledger_{日期}.png` | 纸上交易累计净值与单期超额(账本满 2 期结算后才出现) |
+
+附件是三个 CSV: `top50` / `portfolio` / `orders`。
+
+图表生成失败不会让周任务失败——会打一行警告, 文本与 CSV 照常送出。
+中文字体走 Noto Sans CJK SC; 只出 PNG, 不生成 html/json 文件, 不上传任何在线服务。
+
+行业图的偏离度单独成栏, 而不是在权重栏上画一条 ±5% 的带: 行业是类别轴,
+跨类别的连续填充会把不相邻的行业连起来, 读起来像趋势, 实际没有这层含义。
