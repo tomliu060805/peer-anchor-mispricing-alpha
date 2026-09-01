@@ -1,0 +1,223 @@
+{
+ "fit_date": "2021-12-31",
+ "later_date": "2022-12-30",
+ "k": 9,
+ "leave_one_ratio_out": {
+  "win_vs_industry": 14,
+  "win_vs_random": 17,
+  "n": 17,
+  "rows": [
+   {
+    "ratio": "roe",
+    "cluster": 0.5984144646161716,
+    "industry": 0.8870657369413499,
+    "random": 0.9961143549635709
+   },
+   {
+    "ratio": "roa",
+    "cluster": 0.5178575225330845,
+    "industry": 0.8596084355307787,
+    "random": 0.9968519124088513
+   },
+   {
+    "ratio": "gross_margin",
+    "cluster": 0.7418041540560735,
+    "industry": 0.7815665179631598,
+    "random": 0.9959764119739061
+   },
+   {
+    "ratio": "net_margin",
+    "cluster": 0.5389989719022358,
+    "industry": 0.8916130811965437,
+    "random": 0.9964712684099852
+   },
+   {
+    "ratio": "debt_ratio",
+    "cluster": 0.4967287954872358,
+    "industry": 0.8172149048392964,
+    "random": 0.9971647873408879
+   },
+   {
+    "ratio": "ib_debt_ratio",
+    "cluster": 0.6291457042191992,
+    "industry": 0.8433683413301976,
+    "random": 0.9966465926642792
+   },
+   {
+    "ratio": "equity_mult",
+    "cluster": 0.49366281959832076,
+    "industry": 0.8190013152013603,
+    "random": 0.9974894981021762
+   },
+   {
+    "ratio": "current_ratio",
+    "cluster": 0.4868782266283646,
+    "industry": 0.8564345298387598,
+    "random": 0.9965620307772698
+   },
+   {
+    "ratio": "quick_ratio",
+    "cluster": 0.501946482610258,
+    "industry": 0.8471863834268554,
+    "random": 0.9987720200551535
+   },
+   {
+    "ratio": "cash_ratio",
+    "cluster": 0.5632161866332835,
+    "industry": 0.881810790749339,
+    "random": 0.9975388967428275
+   },
+   {
+    "ratio": "int_cover",
+    "cluster": 0.4968751689417431,
+    "industry": 0.8898589747418376,
+    "random": 0.9936012607408499
+   },
+   {
+    "ratio": "asset_turn",
+    "cluster": 0.8513446170229768,
+    "industry": 0.7489184238978872,
+    "random": 0.9951482617288294
+   },
+   {
+    "ratio": "recv_turn",
+    "cluster": 0.9074083805641964,
+    "industry": 0.6539752742996227,
+    "random": 0.9943684225066101
+   },
+   {
+    "ratio": "inv_turn",
+    "cluster": 0.9085818799329966,
+    "industry": 0.6197206688252267,
+    "random": 0.9956849498690239
+   },
+   {
+    "ratio": "ocf_rev",
+    "cluster": 0.6565436916283434,
+    "industry": 0.8895060892507972,
+    "random": 0.9969500385667626
+   },
+   {
+    "ratio": "ocf_asset",
+    "cluster": 0.67242225241277,
+    "industry": 0.901854750836553,
+    "random": 0.9987327352899309
+   },
+   {
+    "ratio": "ocf_np",
+    "cluster": 0.7311833779638897,
+    "industry": 0.9140934726780291,
+    "random": 0.9960897297009106
+   }
+  ]
+ },
+ "persistence": {
+  "win_vs_industry": 14,
+  "win_vs_random": 17,
+  "n": 17,
+  "rows": [
+   {
+    "ratio": "roe",
+    "cluster": 0.6888067275988624,
+    "industry": 0.9117354240456842,
+    "random": 0.99586880813143
+   },
+   {
+    "ratio": "roa",
+    "cluster": 0.6132543528060785,
+    "industry": 0.9016020762902438,
+    "random": 0.9953226002514487
+   },
+   {
+    "ratio": "gross_margin",
+    "cluster": 0.725967878653752,
+    "industry": 0.720555107831698,
+    "random": 0.9957988572631911
+   },
+   {
+    "ratio": "net_margin",
+    "cluster": 0.588844936657513,
+    "industry": 0.9052499989126546,
+    "random": 0.997700169738358
+   },
+   {
+    "ratio": "debt_ratio",
+    "cluster": 0.49466198194377736,
+    "industry": 0.8084489702616149,
+    "random": 0.9966754197228287
+   },
+   {
+    "ratio": "ib_debt_ratio",
+    "cluster": 0.6247119096845818,
+    "industry": 0.8476193444728417,
+    "random": 0.9940027260296462
+   },
+   {
+    "ratio": "equity_mult",
+    "cluster": 0.5055898551730555,
+    "industry": 0.8085422738506446,
+    "random": 0.9975058113439982
+   },
+   {
+    "ratio": "current_ratio",
+    "cluster": 0.5022643666348574,
+    "industry": 0.8401439104615257,
+    "random": 0.9968533777407543
+   },
+   {
+    "ratio": "quick_ratio",
+    "cluster": 0.5084779315317104,
+    "industry": 0.8409095365936282,
+    "random": 0.997533410215355
+   },
+   {
+    "ratio": "cash_ratio",
+    "cluster": 0.5802839195163155,
+    "industry": 0.8609262527985034,
+    "random": 0.9948788095743367
+   },
+   {
+    "ratio": "int_cover",
+    "cluster": 0.6382086166913139,
+    "industry": 0.9074086601682014,
+    "random": 0.9953087885494586
+   },
+   {
+    "ratio": "asset_turn",
+    "cluster": 0.7248805373432046,
+    "industry": 0.7533307007379046,
+    "random": 0.995369654572509
+   },
+   {
+    "ratio": "recv_turn",
+    "cluster": 0.8387266749752993,
+    "industry": 0.6252863865946374,
+    "random": 0.9976416241525307
+   },
+   {
+    "ratio": "inv_turn",
+    "cluster": 0.7879549510211085,
+    "industry": 0.6230278864982081,
+    "random": 0.995963224931977
+   },
+   {
+    "ratio": "ocf_rev",
+    "cluster": 0.8342280087845412,
+    "industry": 0.9106370426358922,
+    "random": 0.9987634797327164
+   },
+   {
+    "ratio": "ocf_asset",
+    "cluster": 0.8484782741939744,
+    "industry": 0.9070613683678185,
+    "random": 0.9969747756184274
+   },
+   {
+    "ratio": "ocf_np",
+    "cluster": 0.906189640366775,
+    "industry": 0.9273922617021245,
+    "random": 0.9966827787337778
+   }
+  ]
+ }
+}
