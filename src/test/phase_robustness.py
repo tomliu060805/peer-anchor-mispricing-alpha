@@ -23,11 +23,52 @@ SEG = {'dev': ('2016-01-01', '2022-12-31'),
        'val': ('2023-01-01', '2024-08-16'),
        'test': ('2024-08-19', '2026-12-31')}
 
-_base_sig = list(sig_all)
+# 锚变量只在原信号网格的日期上算过, 换相位就是另一批日期——不补算的话
+# PG_b/ZS_b/PG_dual/PG_te 全是 NaN, 每期 hard.sum()<100 直接跳过, recs 为空。
+def backfill(ts):
+    """为给定日期补算四个锚变量, 公式与 open_test_segment 完全一致。"""
+    todo = [t for t in ts if not np.isfinite(PG_b[t]).any()]
+    for _t in todo:
+        _g, _pm = _gap_from(RB8, NB8, WV8, _t)
+        PG_b[_t] = _g
+        PM_b[_t] = _pm
+        PG_dual[_t] = _gap_from(_RBd, _NBd, _WVd, _t)[0]
+        PG_te[_t] = _gap_from(_RBt, _NBt, _WVt, _t)[0]
+    _W = 120
+    for _b in range(len(RB8)):
+        _t1 = int(RB8[_b]); _t0 = _t1 - _W
+        _t2 = int(RB8[_b + 1]) if _b + 1 < len(RB8) else T
+        _sds = [t for t in todo if _t1 <= t < _t2 and t < T]
+        if not _sds:
+            continue
+        _nbr = NB8[_b]; _idx = np.where(_nbr[:, 0] >= 0)[0]
+        if len(_idx) < 100:
+            continue
+        _nb = _nbr[_idx]
+        _base = logc[_t0 - 1] if _t0 > 0 else np.zeros(N)
+        _Pw = np.exp(logc[_t0:_t1] - _base)
+        _nbc = np.where(_nb >= 0, _nb, 0)
+        _sj = _Pw[:, _nbc.ravel()].reshape(_W, len(_idx), _nb.shape[1])
+        _str = _Pw[:, _idx][:, :, None] - _sj
+        _mu = _str.mean(0); _sd = _str.std(0) + 1e-9
+        _d = (_str ** 2).sum(0); _d = _d - _d.min(1, keepdims=True)
+        _wsm = np.exp(-_d) * (_nb >= 0)
+        _wsm = _wsm / np.maximum(_wsm.sum(1, keepdims=True), 1e-12)
+        for _t in _sds:
+            _Pt = np.exp(logc[_t] - _base)
+            ZS_b[_t, _idx] = -np.nansum(((_Pt[_idx][:, None] - _Pt[_nbc] - _mu) / _sd) * _wsm, 1)
+    return len(todo)
+
+
 res = {}
 for ph in range(5):
     sig_all = [int(x) for x in np.arange(int(RB8[0]) + 1 + ph, T - 6, 5)]
+    n_new = backfill(sig_all)
+    print(f'相位{ph}: 补算 {n_new} 期锚变量', flush=True)
     recs = run_alpha()
+    if not recs:
+        print(f'相位{ph}: 无有效期, 跳过', flush=True)
+        continue
     ds = np.array([r[0] for r in recs])
     pr = np.array([r[1] for r in recs])
     bq = np.array([r[2] for r in recs])
