@@ -104,7 +104,8 @@ T+1 与融券稀缺、股指期货贴水、2015 后保证金与限仓。
 ├── src/
 │   ├── alpha/        选股引擎全部实验脚本（按版本编号 01~87）
 │   ├── beta/         破位择时复现与检验脚本
-│   └── fusion/       融合回测与绘图
+│   ├── fusion/       融合回测与绘图
+│   └── live/         生产流水线：建数据 → 出持仓 → 定时任务
 ├── config/           冻结的策略配置（含 SHA 存证）
 ├── data/             1 分钟指数面板（gitignored，由脚本构建）
 ├── cache/            中间缓存（gitignored，约 3GB）
@@ -140,7 +141,33 @@ python src/fusion/plot_fusion.py
 所有路径由 `src/paths.py` 统一解析：项目根自动推导（或用 `PROJ_ROOT` 覆盖），
 数据源由环境变量指定。数据依赖清单与关键口径见 [`docs/data_requirements.md`](docs/data_requirements.md)。
 
-## 五、方法论纪律
+## 五、实盘运行
+
+研究期的缓存散落在 90+ 个脚本里作为副产品（网络藏在涨停共现探测脚本、基准收益
+藏在条件化实验脚本）。生产不能依赖"跑某个研究脚本的副作用"，`src/live/` 是独立
+重写的流水线：
+
+```bash
+python src/live/pipeline.py --stage all      # S1 日线 → S5 网络，串行增量
+python src/live/pipeline.py --check          # 新鲜度 + 维度一致性
+python src/live/generate_portfolio.py        # 当期目标持仓（200 只 + B2 约束）
+python src/live/weekly_top50.py              # 当期打分 Top-50
+python src/live/paper_ledger.py              # 上期结算 + 本期信号入账
+bash   src/live/run_weekly.sh                # 定时任务入口（含 flock 互斥）
+```
+
+产出在 `output/live/`（gitignored）。逐阶段依赖、三个并行化坑与缓存加锁的原因见
+[`docs/production_pipeline.md`](docs/production_pipeline.md)。
+
+**生产实现与回测实现必须对拍。** `generate_portfolio.py` 是对研究代码的重新实现，
+若打分逻辑与回测有出入，产出的持仓就不是被验证过的那个策略，而回测指标会继续被
+当成它的业绩。`src/live/reconcile.py` 在同一批网络输入下逐日比较两条路径选出的
+股票集合，判据为交集/并集 ≥ 0.98 且分数相关 ≥ 0.999。
+
+`paper_ledger.py` 只做结算与记账，打分全部委托 `generate_portfolio`——同一策略
+存在多套打分实现时，它们迟早会悄悄分叉，而分叉不会报错。
+
+## 六、方法论纪律
 
 1. **分段铁律**：dev 2016–2022 / val 2023–2024.08 / **test ≥ 2024-08-19 封存**
 2. **双段一致才采纳**：任何改进必须 dev 与 val 同时改善，单段亮眼一律进观察名单
