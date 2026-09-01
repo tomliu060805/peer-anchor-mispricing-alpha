@@ -1,0 +1,137 @@
+{
+ "W0_现行(∝分数)": {
+  "max_w_median": 0.0057,
+  "dev": {
+   "ExAnn": 0.1666,
+   "IR": 1.23,
+   "ExMDD": 0.2378,
+   "AbsVol": 0.2709,
+   "AbsMDD": 0.3959,
+   "turn": 0.259
+  },
+  "val": {
+   "ExAnn": 0.186,
+   "IR": 0.84,
+   "ExMDD": 0.2386,
+   "AbsVol": 0.3199,
+   "AbsMDD": 0.2981,
+   "turn": 0.238
+  },
+  "test": {
+   "ExAnn": 0.1944,
+   "IR": 1.24,
+   "ExMDD": 0.2189,
+   "AbsVol": 0.2559,
+   "AbsMDD": 0.2439,
+   "turn": 0.257
+  }
+ },
+ "W1_风险平价(分数/vol)": {
+  "max_w_median": 0.011,
+  "dev": {
+   "ExAnn": 0.1559,
+   "IR": 1.2,
+   "ExMDD": 0.2293,
+   "AbsVol": 0.2622,
+   "AbsMDD": 0.4172,
+   "turn": 0.288
+  },
+  "val": {
+   "ExAnn": 0.1722,
+   "IR": 0.82,
+   "ExMDD": 0.2312,
+   "AbsVol": 0.3077,
+   "AbsMDD": 0.2915,
+   "turn": 0.263
+  },
+  "test": {
+   "ExAnn": 0.1776,
+   "IR": 1.14,
+   "ExMDD": 0.223,
+   "AbsVol": 0.2465,
+   "AbsMDD": 0.2422,
+   "turn": 0.279
+  }
+ },
+ "W2_风险平价+1%上限": {
+  "max_w_median": 0.01,
+  "dev": {
+   "ExAnn": 0.1624,
+   "IR": 1.24,
+   "ExMDD": 0.229,
+   "AbsVol": 0.2636,
+   "AbsMDD": 0.4078,
+   "turn": 0.283
+  },
+  "val": {
+   "ExAnn": 0.1733,
+   "IR": 0.82,
+   "ExMDD": 0.2313,
+   "AbsVol": 0.3081,
+   "AbsMDD": 0.2915,
+   "turn": 0.262
+  },
+  "test": {
+   "ExAnn": 0.1774,
+   "IR": 1.14,
+   "ExMDD": 0.223,
+   "AbsVol": 0.2467,
+   "AbsMDD": 0.2424,
+   "turn": 0.279
+  }
+ },
+ "W3_纯逆波动(对照)": {
+  "max_w_median": 0.011,
+  "dev": {
+   "ExAnn": 0.1519,
+   "IR": 1.18,
+   "ExMDD": 0.2309,
+   "AbsVol": 0.2605,
+   "AbsMDD": 0.4258,
+   "turn": 0.279
+  },
+  "val": {
+   "ExAnn": 0.1715,
+   "IR": 0.82,
+   "ExMDD": 0.2309,
+   "AbsVol": 0.307,
+   "AbsMDD": 0.2912,
+   "turn": 0.255
+  },
+  "test": {
+   "ExAnn": 0.1747,
+   "IR": 1.13,
+   "ExMDD": 0.2234,
+   "AbsVol": 0.2458,
+   "AbsMDD": 0.2425,
+   "turn": 0.273
+  }
+ },
+ "W4_逆特质波动": {
+  "max_w_median": 0.0129,
+  "dev": {
+   "ExAnn": 0.1672,
+   "IR": 1.24,
+   "ExMDD": 0.2278,
+   "AbsVol": 0.2666,
+   "AbsMDD": 0.3955,
+   "turn": 0.298
+  },
+  "val": {
+   "ExAnn": 0.1715,
+   "IR": 0.8,
+   "ExMDD": 0.2449,
+   "AbsVol": 0.3146,
+   "AbsMDD": 0.304,
+   "turn": 0.274
+  },
+  "test": {
+   "ExAnn": 0.1865,
+   "IR": 1.18,
+   "ExMDD": 0.2275,
+   "AbsVol": 0.2511,
+   "AbsMDD": 0.2457,
+   "turn": 0.29
+  }
+ }
+}
