@@ -152,6 +152,7 @@ python src/live/pipeline.py --stage all      # S1 日线 → S5 网络，串行�
 python src/live/pipeline.py --check          # 新鲜度 + 维度一致性
 python src/live/generate_portfolio.py        # 当期目标持仓（200 只 + B2 约束）
 python src/live/weekly_top50.py              # 当期打分 Top-50
+python src/live/make_charts.py               # 报告图表(Top-50/持仓/行业/账本)
 python src/live/paper_ledger.py              # 上期结算 + 本期信号入账
 bash   src/live/run_weekly.sh                # 定时任务入口（含 flock 互斥）
 ```
