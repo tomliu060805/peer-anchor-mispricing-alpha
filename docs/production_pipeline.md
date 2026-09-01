@@ -137,3 +137,13 @@ done
 
 研究链会把 `mf_grid` / `tj_grid` 等缓存作为副作用重建,所以删掉坏文件后
 重跑一次即可,不必手工修复。
+
+## 配置 SHA 只覆盖参数段
+
+决策日志每期记 `config_sha`, 用于事后按配置版本归组。哈希只取参数段
+(`version/domain/score/portfolio/execution/cost/benchmark/split`),
+不含 `evidence` 与 `known_limits`——补一条已知局限属于文档更新, 不该让
+"同 SHA = 同配置"这个不变量失效。
+
+哈希口径本身在 2026-09-01 变更过一次(从整文件改为参数段), 此前日志中的
+`1c19b0c2122c` 与之后的 `d2bf8a08da2b` 指向的是**同一份参数**, 不是配置改动。

@@ -22,7 +22,11 @@ exec(_src.split("out = {'criteria': CRIT}")[0])
 _sys.path.insert(0, f'{PROJ}/src/live')
 import generate_portfolio as gp
 
-DATES = [d for d in ['2025-01-06', '2025-06-16', '2025-12-15', '2026-06-15', '2026-08-31']]
+# **必须取回测信号网格上的日期**。回测的 PG_b / ZS_b / PG_dual / PG_te 只在
+# sig_all 的日期上被计算, 其余日期是 NaN 或上一期的陈旧值。在非网格日期上比较,
+# 等于拿生产的现算值去比回测的空值——会得到"低于随机重叠"的假判负。
+# (第一版对拍就栽在这里: 5 个日期只有 1 个在网格上, 其余全塌。)
+DATES = [str(dates[t]) for t in sig_all[-40::8]]
 rows = []
 for ds in DATES:
     w = np.where(dates == ds)[0]

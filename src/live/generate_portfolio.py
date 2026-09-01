@@ -71,9 +71,14 @@ def _gap(NBz, t, mom):
 
 def generate(asof=None, write=True, return_scores=False):
     cfg_path = f'{CONFIG_DIR}/frozen_alpha_v28.json'
-    cfg_raw = open(cfg_path, encoding='utf-8').read()
-    cfg_sha = hashlib.sha256(cfg_raw.encode()).hexdigest()[:12]
-    cfg = json.loads(cfg_raw)
+    cfg = json.loads(open(cfg_path, encoding='utf-8').read())
+    # 只对**参数段**取哈希: evidence / known_limits 是文档, 补一条已知局限
+    # 不该让"同 SHA = 同配置"这个不变量失效, 否则历史决策日志无法按 SHA 归组。
+    PARAM_KEYS = ['version', 'domain', 'score', 'portfolio', 'execution', 'cost',
+                  'benchmark', 'split']
+    cfg_sha = hashlib.sha256(json.dumps({k: cfg[k] for k in PARAM_KEYS if k in cfg},
+                                        sort_keys=True, ensure_ascii=False)
+                             .encode()).hexdigest()[:12]
 
     g = np.load(f'{CACHE}/daily_grid.npz')
     ret, dates, codes = g['ret'], g['dates'], g['codes']
@@ -131,10 +136,15 @@ def generate(asof=None, write=True, return_scores=False):
             Pt = np.exp(logc[t] - base)
             zs[idx] = -np.nansum(((Pt[idx][:, None] - Pt[nbc] - mu) / sd) * wsm, 1)
 
-    # ROE gap
+    # ROE gap —— **方向与价格锚相反**。
+    # 价格锚是 邻居 - 自身 (邻居涨了自己没跟上 = 待追赶, 正);
+    # 基本面锚是 自身 - 邻居 (自己基本面比邻居好 = 质量, 正)。
+    # 这里曾误用价格锚的方向, 组件差分给出 gap_roe 相关 -1.000000 才发现。
     FI = np.load(f'{CACHE}/fi_grid.npz')['fi']
     ROE = FI[:, 0]
-    g_roe, _ = _gap(npz_p, t, ROE[t])
+    _mu_roe, _ = _gap(npz_p, t, ROE[t])
+    g_roe = -_mu_roe
+    g_roe[~np.isfinite(ROE[t])] = np.nan
     # dROE: stat_date 变化时的 ROE 环比
     droe = np.full(N, np.nan, np.float32)
     if t > 60:
@@ -267,7 +277,12 @@ def generate(asof=None, write=True, return_scores=False):
         print(f'saved output/live/portfolio_{log_date}.csv (+orders, +log)')
     if return_scores:
         extra = {'comb': comb, 'hard': hard, 'codes': codes,
-                 'anchor': _rank01(base_s, hard), 'behav': behav, 'struct': struct}
+                 'anchor': _rank01(base_s, hard), 'behav': behav, 'struct': struct,
+                 'dbg': {'v': v, 'mom20': mom20[t], 'g_p': g_p, 'zs': zs, 'g_d': g_d,
+                         'g_t': g_t, 'g_roe': g_roe, 'droe': droe, 'dom': dom,
+                         'lim250': lim250[t], 'tradable': tradable[t],
+                         'base_s': base_s, 'sweep': sweep, 'osize': osize,
+                         'behav': behav, 'struct': struct}}
         return df, od, stats, extra
     return df, od, stats
 
