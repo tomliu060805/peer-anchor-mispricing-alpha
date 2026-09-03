@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""v37: 回应某券商)看
+"""v37: 回应外部质疑, 看
  各分量单独作为40%行为块时的产品超额, 以及条件表单调性是否保持."""
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..'))

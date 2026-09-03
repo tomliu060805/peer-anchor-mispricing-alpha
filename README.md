@@ -49,6 +49,11 @@
 
 ## 二、策略结构
 
+![策略架构](charts/architecture/strategy_architecture.png)
+
+图中数字口径全部取自 [`config/frozen_alpha_v28.json`](config/frozen_alpha_v28.json)，
+改配置后重跑 `python src/make_architecture.py` 即可同步。
+
 ### 2.1 alpha 引擎：同伴锚 × 微观行为选股 (v27)
 
 ```
@@ -105,15 +110,17 @@ T+1 与融券稀缺、股指期货贴水、2015 后保证金与限仓。
 │   ├── alpha/        选股引擎全部实验脚本（按版本编号 01~87）
 │   ├── beta/         破位择时复现与检验脚本
 │   ├── fusion/       融合回测与绘图
-│   └── live/         生产流水线：建数据 → 出持仓 → 定时任务
+│   ├── live/         生产流水线：建数据 → 出持仓 → 定时任务
+│   ├── test/         测试段开封、稳健性与相位检验
+│   └── research/     外部线索的复现与判负（不进生产）
 ├── config/           冻结的策略配置（含 SHA 存证）
 ├── data/             1 分钟指数面板（gitignored，由脚本构建）
 ├── cache/            中间缓存（gitignored，约 3GB）
-├── output/{alpha,beta,fusion}/   指标 JSON / 净值序列 / 运行日志
-├── charts/           各版本净值图与诊断图
+├── output/{alpha,beta,fusion,research}/  指标 JSON / 净值序列 / 运行日志
+├── charts/           架构图、各版本净值图与诊断图
 ├── docs/             规格文档、实验全记录、判负清单
 ├── src/paths.py      路径统一解析（项目根自动推导 + 数据源环境变量）
-└── papers/           参考论文（gitignored）
+├── src/make_architecture.py  架构图生成（charts/architecture/）
 ```
 
 ## 四、复现

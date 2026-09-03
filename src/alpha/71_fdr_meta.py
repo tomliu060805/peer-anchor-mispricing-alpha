@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """v40: 多重检验校正(方向5). 汇总本项目所有被测变体的IR→t值, 做Bonferroni/BH-FDR/
-多重检验文献式门槛, 给出'在做了N次尝试的背景下, 多大的t才算真发现'."""
+多重检验门槛, 给出'在做了N次尝试的背景下, 多大的t才算真发现'."""
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..'))
 from paths import PROJ_ROOT as PROJ
@@ -61,9 +61,9 @@ t_bh=ppf(1-bh_thresh) if bh_thresh else None
 res={'N_variants':N,'t_max':round(float(ts.max()),2),
      'Bonferroni_alpha':round(float(bonf),6),'t_threshold_Bonferroni':round(float(t_bonf),2),
      't_threshold_BH_FDR5%':round(float(t_bh),2) if t_bh else None,
-     '多重检验文献_rule_of_thumb_t':3.0,
+     'rule_of_thumb_t':3.0,
      'n_pass_bonf':int((ts>t_bonf).sum()),'n_pass_bh':int((ts>t_bh).sum()) if t_bh else None,
-     'n_pass_多重检验文献3':int((ts>3.0).sum())}
+     'n_pass_rule_of_thumb3':int((ts>3.0).sum())}
 top=sorted(uniq,key=lambda r:-r[2])[:15]
 res['top15']=[{'file':r[0],'variant':r[1],'IR':r[2],'ExAnn':r[3],'t':round(r[2]*math.sqrt(YEARS),2)} for r in top]
 json.dump(res,open(f'{OUT}/metrics_v40_fdr.json','w'),ensure_ascii=False,indent=2)

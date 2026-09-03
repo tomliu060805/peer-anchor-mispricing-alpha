@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """下游信号 + 截面回测.
 信号族:
-  A. zspread : 联动配对价差 z-score 聚合 (经典配对 softmax 权重, 论文公开预印本主信号, 均值回复)
+  A. zspread : 联动配对价差 z-score 聚合 (softmax 距离权重, 均值回复)
   B. peer_mom: 邻居动量外溢 (经济关联动量 系, 正相关邻居的过去20日收益加权)
   C. peer_gap: peer_mom - own_mom (收敛价差)
 网络: resid / raw / industry / random

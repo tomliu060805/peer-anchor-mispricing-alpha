@@ -5,7 +5,7 @@ output/**/*.npz
 output/**/*.npy
 output/**/*.pkl
 output/**/*.log
-papers/*.pdf
+refs/
 docs/*.pdf
 
 # Python
@@ -22,3 +22,6 @@ venv/
 .env
 .env.local
 output/live/
+
+# 净化规则表(含要禁的字样本身, 不入库)
+.sanitize_rules
