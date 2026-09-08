@@ -43,7 +43,13 @@
 ③ **beta 腿在测试段几乎未触发**（在场 2.1%），其样本外证据显著弱于 alpha 腿。
 详见 [`docs/open_issues.md`](docs/open_issues.md)。
 
-![融合超额净值](charts/fusion/fusion_excess_nav.png)
+![超额净值：全样本与测试段](charts/test/test_and_full_excess.png)
+
+> 上图**含已开封的测试段**（绿底，2024-08-19 起，从未参与调参）。
+> 中栏是测试段单独计净值的走势，下栏逐年超额中绿底年份属测试段（2024 为混合年）。
+> 图中"全样本 18.0% / IR 1.23"与"23.3% / IR 1.47"是 **2016 至今含测试段**的口径，
+> 与上表 18.2% / 24.4% 的差异仅因上表统计到 2024-08-16 为止。
+> 只看训练+验证段的对照图见 [`charts/fusion/fusion_excess_nav.png`](charts/fusion/fusion_excess_nav.png)。
 
 ---
 
